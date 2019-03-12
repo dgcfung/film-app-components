@@ -46,6 +46,8 @@ Make sure you now call these components in `App.js`. Check your app in the brows
 
 #### Step 3: Pass props to the new components
 
+Import the `TMDB` to your `App.js`
+
 Pass the films (stored in `TMDB.films`) to each of your new components as props.
 
 If you check your file, it still shouldn't look differently. We're sending the props to the components, but we are not using the props yet.
@@ -69,11 +71,11 @@ Does "It" appear on the left side of your browser?
 
 #### Step 5: Create and render an array of film title elements
 
-Inside `render`, right above your `return` create a variable called `allFilms`
+Inside the `render` method, right above the `return` create a variable called `allFilms`
 
-Inside of `allFilms` use `.map()` to iterate over the collection of films and create an element for each one. (Here is the [map documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+Inside of `allFilms` use `.map()` to iterate over the collection of films and create an element for each one that holds the film title. (Here is the [map documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
 
-Then, render the variable `allFilms` below the `section-title` (You can delete the `<h1>` you created from step 4.
+Then, render the variable `allFilms` below the `section-title` (You can delete the `<h1>` you created from step 4).
 
 You should have a list of all the films appear in the left column.
 
