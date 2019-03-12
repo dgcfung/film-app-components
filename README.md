@@ -73,7 +73,7 @@ Inside `render`, right above your `return` create a variable called `allFilms`
 
 Inside of `allFilms` use `.map()` to iterate over the collection of films and create an element for each one. (Here is the [map documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
 
-Then, render the variable `allFilms` underneath the Films `<h1>` (You can delete the `<h1>` you created from step 4.
+Then, render the variable `allFilms` below the `section-title` (You can delete the `<h1>` you created from step 4.
 
 You should have a list of all the films appear in the left column.
 
