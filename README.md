@@ -69,16 +69,18 @@ Does "It" appear on the left side of your browser?
 
 #### Step 5: Create and render an array of film title elements
 
-Use `.map()` inside of the `FilmListing` to iterate over the collection of films and create an element for each one. (Here is the [map documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+Inside `render`, right above your `return` create a variable called `allFilms`
 
-Then, render the variable `allFilms` underneath the Films `<h1>`.
+Inside of `allFilms` use `.map()` to iterate over the collection of films and create an element for each one. (Here is the [map documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map).
+
+Then, render the variable `allFilms` underneath the Films `<h1>` (You can delete the `<h1>` you created from step 4.
 
 You should have a list of all the films appear in the left column.
 
 <details>
   <summary>Hint - Need help on <code>map</code>?</summary>
   This step will look like this in your <code>render</code> method (above the <code>return</code>):
-  <code> let allFilms = this.props.films.map( (film, index) => ( your-jsx-per-film-here ))</code>
+  <code> let allFilms = this.props.films.map( film => ( your-jsx-per-film-here ))</code>
     Then, you'll just need to call <code>{allFilms}</code> in your JSX where you want the titles to appear.
 </details>
 
@@ -86,7 +88,9 @@ You should have a list of all the films appear in the left column.
 
 #### Step 6: Move the film rows to their own component
 
-Create a new component for each film row, called `FilmRow.js`. Have your `map` instead create an array of `FilmRow`s. Don't forget to pass the individual film prop to the component when creating them!
+Create a new component for each film row, called `FilmRow.js`. Have your `map` instead render your `FilmRow` component. Don't forget to pass the individual `film` prop to the component when creating them!
+
+Don't forget to import your `FilmRow` component to `FilmList`
 
 Once you have this working, also pass `film.id` as a `key` prop to `FilmRow`, though you won't use it yet.
 
