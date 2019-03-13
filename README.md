@@ -3,7 +3,7 @@
 
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Starting a Film Project
 
-This project was created with `create-react-app`. Once you have the app cloned, you should run `npm install`. You can then run it with `npm run start`.
+This project was created with `create-react-app`. Once you have the app forked and cloned, you should run `npm install`. You can then run it with `npm run start`.
 
 ## Your Mission
 
